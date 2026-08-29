@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" role="img" aria-label="Placeholder: clinician holding a patient's hands">
+  <defs>
+    <linearGradient id="ch-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f3ece1"/><stop offset="1" stop-color="#e2d9c9"/>
+    </linearGradient>
+    <linearGradient id="ch-sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#e8ebe6"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="800" fill="url(#ch-bg)"/>
+  <circle cx="470" cy="150" r="150" fill="#ffffff" opacity=".35"/>
+  <rect y="560" width="600" height="240" fill="#2f3f4a" opacity=".16"/>
+  <path d="M0 470h600v90H0z" fill="#d8cdba" opacity=".6"/>
+  <!-- lower hand -->
+  <path d="M150 430q90-60 200-26 70 22 110 68 18 22-6 34-52 26-140 22-90-4-150-40-30-20-14-58z" fill="#e3b892"/>
+  <!-- upper hand -->
+  <path d="M180 372q96-52 206-14 62 22 96 62 16 20-8 30-56 24-142 20-84-4-142-40-28-18-10-58z" fill="#eec9a4"/>
+  <g fill="#e0b489" opacity=".85">
+    <rect x="300" y="384" width="112" height="17" rx="8"/>
+    <rect x="316" y="410" width="108" height="17" rx="8"/>
+    <rect x="330" y="436" width="96" height="17" rx="8"/>
+  </g>
+  <!-- ring -->
+  <rect x="352" y="398" width="15" height="20" rx="6" fill="#e6cf9a"/>
+  <!-- cuffs -->
+  <path d="M120 356q-46 26-40 92 4 54 46 74l70-26q-52-30-40-96z" fill="url(#ch-sleeve)"/>
+  <path d="M96 452q-40 30-30 92l120-14q-40-24-30-70z" fill="#eef1ec"/>
+</svg>

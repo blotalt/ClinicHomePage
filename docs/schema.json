@@ -1,0 +1,947 @@
+{
+    "appointment_requests": {
+        "cols": [
+            {
+                "c": "id",
+                "d": "bigint",
+                "n": "NO",
+                "k": "PRI"
+            },
+            {
+                "c": "first_name",
+                "d": "varchar",
+                "n": "NO",
+                "k": ""
+            },
+            {
+                "c": "last_name",
+                "d": "varchar",
+                "n": "NO",
+                "k": ""
+            },
+            {
+                "c": "email",
+                "d": "varchar",
+                "n": "NO",
+                "k": ""
+            },
+            {
+                "c": "phone",
+                "d": "varchar",
+                "n": "YES",
+                "k": ""
+            },
+            {
+                "c": "service_id",
+                "d": "bigint",
+                "n": "YES",
+                "k": "MUL"
+            },
+            {
+                "c": "doctor_id",
+                "d": "bigint",
+                "n": "YES",
+                "k": "MUL"
+            },
+            {
+                "c": "patient_id",
+                "d": "bigint",
+                "n": "YES",
+                "k": "MUL"
+            },
+            {
+                "c": "service",
+                "d": "varchar",
+                "n": "YES",
+                "k": ""
+            },
+            {
+                "c": "message",
+                "d": "text",
+                "n": "NO",
+                "k": ""
+            },
+            {
+                "c": "read_at",
+                "d": "timestamp",
+                "n": "YES",
+                "k": ""
+            },
+            {
+                "c": "created_at",
+                "d": "timestamp",
+                "n": "YES",
+                "k": ""
+            },
+            {
+                "c": "updated_at",
+                "d": "timestamp",
+                "n": "YES",
+                "k": ""
+            }
+        ],
+        "fks": [
+            {
+                "c": "doctor_id",
+                "rt": "doctors",
+                "rc": "id"
+            },
+            {
+                "c": "patient_id",
+                "rt": "patients",
+                "rc": "id"
+            },
+            {
+                "c": "service_id",
+                "rt": "services",
+                "rc": "id"
+            }
+        ]
+    },
+    "appointments": {
+        "cols": [
+            {
+                "c": "id",
+                "d": "bigint",
+                "n": "NO",
+                "k": "PRI"
+            },
+            {
+                "c": "patient_id",
+                "d": "bigint",
+                "n": "NO",
+                "k": "MUL"
+            },
+            {
+                "c": "doctor_id",
+                "d": "bigint",
+                "n": "YES",
+                "k": "MUL"
+            },
+            {
+                "c": "service_id",
+                "d": "bigint",
+                "n": "YES",
+                "k": "MUL"
+            },
+            {
+                "c": "appointment_request_id",
+                "d": "bigint",
+                "n": "YES",
+                "k": "MUL"
+            },
+            {
+                "c": "scheduled_at",
+                "d": "datetime",
+                "n": "NO",
+                "k": "MUL"
+            },
+            {
+                "c": "duration_minutes",
+                "d": "smallint",
+                "n": "NO",
+                "k": ""
+            },
+            {
+                "c": "status",
+                "d": "varchar",
+                "n": "NO",
+                "k": ""
+            },
+            {
+                "c": "notes",
+                "d": "text",
+                "n": "YES",
+                "k": ""
+            },
+            {
+                "c": "created_at",
+                "d": "timestamp",
+                "n": "YES",
+                "k": ""
+            },
+            {
+                "c": "updated_at",
+                "d": "timestamp",
+                "n": "YES",
+                "k": ""
+            }
+        ],
+        "fks": [
+            {
+                "c": "appointment_request_id",
+                "rt": "appointment_requests",
+                "rc": "id"
+            },
+            {
+                "c": "doctor_id",
+                "rt": "doctors",
+                "rc": "id"
+            },
+            {
+                "c": "patient_id",
+                "rt": "patients",
+                "rc": "id"
+            },
+            {
+                "c": "service_id",
+                "rt": "services",
+                "rc": "id"
+            }
+        ]
+    },
+    "clinic_hours": {
+        "cols": [
+            {
+                "c": "id",
+                "d": "bigint",
+                "n": "NO",
+                "k": "PRI"
+            },
+            {
+                "c": "department_id",
+                "d": "bigint",
+                "n": "YES",
+                "k": "MUL"
+            },
+            {
+                "c": "day_of_week",
+                "d": "tinyint",
+                "n": "NO",
+                "k": ""
+            },
+            {
+                "c": "opens_at",
+                "d": "time",
+                "n": "YES",
+                "k": ""
+            },
+            {
+                "c": "closes_at",
+                "d": "time",
+                "n": "YES",
+                "k": ""
+            },
+            {
+                "c": "is_closed",
+                "d": "tinyint",
+                "n": "NO",
+                "k": ""
+            },
+            {
+                "c": "created_at",
+                "d": "timestamp",
+                "n": "YES",
+                "k": ""
+            },
+            {
+                "c": "updated_at",
+                "d": "timestamp",
+                "n": "YES",
+                "k": ""
+            }
+        ],
+        "fks": [
+            {
+                "c": "department_id",
+                "rt": "departments",
+                "rc": "id"
+            }
+        ]
+    },
+    "content_items": {
+        "cols": [
+            {
+                "c": "id",
+                "d": "bigint",
+                "n": "NO",
+                "k": "PRI"
+            },
+            {
+                "c": "collection",
+                "d": "varchar",
+                "n": "NO",
+                "k": "MUL"
+            },
+            {
+                "c": "title",
+                "d": "varchar",
+                "n": "NO",
+                "k": ""
+            },
+            {
+                "c": "body",
+                "d": "longtext",
+                "n": "YES",
+                "k": ""
+            },
+            {
+                "c": "icon",
+                "d": "varchar",
+                "n": "YES",
+                "k": ""
+            },
+            {
+                "c": "image_path",
+                "d": "varchar",
+                "n": "YES",
+                "k": ""
+            },
+            {
+                "c": "meta",
+                "d": "json",
+                "n": "YES",
+                "k": ""
+            },
+            {
+                "c": "position",
+                "d": "int",
+                "n": "NO",
+                "k": ""
+            },
+            {
+                "c": "is_published",
+                "d": "tinyint",
+                "n": "NO",
+                "k": ""
+            },
+            {
+                "c": "created_at",
+                "d": "timestamp",
+                "n": "YES",
+                "k": ""
+            },
+            {
+                "c": "updated_at",
+                "d": "timestamp",
+                "n": "YES",
+                "k": ""
+            }
+        ],
+        "fks": []
+    },
+    "departments": {
+        "cols": [
+            {
+                "c": "id",
+                "d": "bigint",
+                "n": "NO",
+                "k": "PRI"
+            },
+            {
+                "c": "name",
+                "d": "varchar",
+                "n": "NO",
+                "k": ""
+            },
+            {
+                "c": "slug",
+                "d": "varchar",
+                "n": "NO",
+                "k": "UNI"
+            },
+            {
+                "c": "description",
+                "d": "text",
+                "n": "YES",
+                "k": ""
+            },
+            {
+                "c": "icon",
+                "d": "varchar",
+                "n": "YES",
+                "k": ""
+            },
+            {
+                "c": "position",
+                "d": "int",
+                "n": "NO",
+                "k": ""
+            },
+            {
+                "c": "is_published",
+                "d": "tinyint",
+                "n": "NO",
+                "k": ""
+            },
+            {
+                "c": "created_at",
+                "d": "timestamp",
+                "n": "YES",
+                "k": ""
+            },
+            {
+                "c": "updated_at",
+                "d": "timestamp",
+                "n": "YES",
+                "k": ""
+            }
+        ],
+        "fks": []
+    },
+    "doctor_service": {
+        "cols": [
+            {
+                "c": "id",
+                "d": "bigint",
+                "n": "NO",
+                "k": "PRI"
+            },
+            {
+                "c": "doctor_id",
+                "d": "bigint",
+                "n": "NO",
+                "k": "MUL"
+            },
+            {
+                "c": "service_id",
+                "d": "bigint",
+                "n": "NO",
+                "k": "MUL"
+            },
+            {
+                "c": "created_at",
+                "d": "timestamp",
+                "n": "YES",
+                "k": ""
+            },
+            {
+                "c": "updated_at",
+                "d": "timestamp",
+                "n": "YES",
+                "k": ""
+            }
+        ],
+        "fks": [
+            {
+                "c": "doctor_id",
+                "rt": "doctors",
+                "rc": "id"
+            },
+            {
+                "c": "service_id",
+                "rt": "services",
+                "rc": "id"
+            }
+        ]
+    },
+    "doctors": {
+        "cols": [
+            {
+                "c": "id",
+                "d": "bigint",
+                "n": "NO",
+                "k": "PRI"
+            },
+            {
+                "c": "department_id",
+                "d": "bigint",
+                "n": "YES",
+                "k": "MUL"
+            },
+            {
+                "c": "user_id",
+                "d": "bigint",
+                "n": "YES",
+                "k": "MUL"
+            },
+            {
+                "c": "name",
+                "d": "varchar",
+                "n": "NO",
+                "k": ""
+            },
+            {
+                "c": "slug",
+                "d": "varchar",
+                "n": "NO",
+                "k": "UNI"
+            },
+            {
+                "c": "title",
+                "d": "varchar",
+                "n": "YES",
+                "k": ""
+            },
+            {
+                "c": "bio",
+                "d": "longtext",
+                "n": "YES",
+                "k": ""
+            },
+            {
+                "c": "photo_path",
+                "d": "varchar",
+                "n": "YES",
+                "k": ""
+            },
+            {
+                "c": "email",
+                "d": "varchar",
+                "n": "YES",
+                "k": ""
+            },
+            {
+                "c": "position",
+                "d": "int",
+                "n": "NO",
+                "k": ""
+            },
+            {
+                "c": "is_published",
+                "d": "tinyint",
+                "n": "NO",
+                "k": ""
+            },
+            {
+                "c": "created_at",
+                "d": "timestamp",
+                "n": "YES",
+                "k": ""
+            },
+            {
+                "c": "updated_at",
+                "d": "timestamp",
+                "n": "YES",
+                "k": ""
+            }
+        ],
+        "fks": [
+            {
+                "c": "department_id",
+                "rt": "departments",
+                "rc": "id"
+            },
+            {
+                "c": "user_id",
+                "rt": "users",
+                "rc": "id"
+            }
+        ]
+    },
+    "passkeys": {
+        "cols": [
+            {
+                "c": "id",
+                "d": "bigint",
+                "n": "NO",
+                "k": "PRI"
+            },
+            {
+                "c": "user_id",
+                "d": "bigint",
+                "n": "NO",
+                "k": "MUL"
+            },
+            {
+                "c": "name",
+                "d": "varchar",
+                "n": "NO",
+                "k": ""
+            },
+            {
+                "c": "credential_id",
+                "d": "varchar",
+                "n": "NO",
+                "k": "UNI"
+            },
+            {
+                "c": "credential",
+                "d": "json",
+                "n": "NO",
+                "k": ""
+            },
+            {
+                "c": "last_used_at",
+                "d": "timestamp",
+                "n": "YES",
+                "k": ""
+            },
+            {
+                "c": "created_at",
+                "d": "timestamp",
+                "n": "YES",
+                "k": ""
+            },
+            {
+                "c": "updated_at",
+                "d": "timestamp",
+                "n": "YES",
+                "k": ""
+            }
+        ],
+        "fks": [
+            {
+                "c": "user_id",
+                "rt": "users",
+                "rc": "id"
+            }
+        ]
+    },
+    "patients": {
+        "cols": [
+            {
+                "c": "id",
+                "d": "bigint",
+                "n": "NO",
+                "k": "PRI"
+            },
+            {
+                "c": "user_id",
+                "d": "bigint",
+                "n": "YES",
+                "k": "MUL"
+            },
+            {
+                "c": "first_name",
+                "d": "varchar",
+                "n": "NO",
+                "k": ""
+            },
+            {
+                "c": "last_name",
+                "d": "varchar",
+                "n": "NO",
+                "k": ""
+            },
+            {
+                "c": "email",
+                "d": "varchar",
+                "n": "NO",
+                "k": "MUL"
+            },
+            {
+                "c": "phone",
+                "d": "varchar",
+                "n": "YES",
+                "k": ""
+            },
+            {
+                "c": "date_of_birth",
+                "d": "date",
+                "n": "YES",
+                "k": ""
+            },
+            {
+                "c": "notes",
+                "d": "text",
+                "n": "YES",
+                "k": ""
+            },
+            {
+                "c": "created_at",
+                "d": "timestamp",
+                "n": "YES",
+                "k": ""
+            },
+            {
+                "c": "updated_at",
+                "d": "timestamp",
+                "n": "YES",
+                "k": ""
+            }
+        ],
+        "fks": [
+            {
+                "c": "user_id",
+                "rt": "users",
+                "rc": "id"
+            }
+        ]
+    },
+    "services": {
+        "cols": [
+            {
+                "c": "id",
+                "d": "bigint",
+                "n": "NO",
+                "k": "PRI"
+            },
+            {
+                "c": "department_id",
+                "d": "bigint",
+                "n": "YES",
+                "k": "MUL"
+            },
+            {
+                "c": "title",
+                "d": "varchar",
+                "n": "NO",
+                "k": ""
+            },
+            {
+                "c": "slug",
+                "d": "varchar",
+                "n": "NO",
+                "k": "UNI"
+            },
+            {
+                "c": "body",
+                "d": "longtext",
+                "n": "YES",
+                "k": ""
+            },
+            {
+                "c": "icon",
+                "d": "varchar",
+                "n": "YES",
+                "k": ""
+            },
+            {
+                "c": "image_path",
+                "d": "varchar",
+                "n": "YES",
+                "k": ""
+            },
+            {
+                "c": "duration_minutes",
+                "d": "smallint",
+                "n": "YES",
+                "k": ""
+            },
+            {
+                "c": "price",
+                "d": "decimal",
+                "n": "YES",
+                "k": ""
+            },
+            {
+                "c": "meta",
+                "d": "json",
+                "n": "YES",
+                "k": ""
+            },
+            {
+                "c": "position",
+                "d": "int",
+                "n": "NO",
+                "k": ""
+            },
+            {
+                "c": "is_published",
+                "d": "tinyint",
+                "n": "NO",
+                "k": "MUL"
+            },
+            {
+                "c": "created_at",
+                "d": "timestamp",
+                "n": "YES",
+                "k": ""
+            },
+            {
+                "c": "updated_at",
+                "d": "timestamp",
+                "n": "YES",
+                "k": ""
+            }
+        ],
+        "fks": [
+            {
+                "c": "department_id",
+                "rt": "departments",
+                "rc": "id"
+            }
+        ]
+    },
+    "site_settings": {
+        "cols": [
+            {
+                "c": "id",
+                "d": "bigint",
+                "n": "NO",
+                "k": "PRI"
+            },
+            {
+                "c": "key",
+                "d": "varchar",
+                "n": "NO",
+                "k": "UNI"
+            },
+            {
+                "c": "group",
+                "d": "varchar",
+                "n": "NO",
+                "k": "MUL"
+            },
+            {
+                "c": "value",
+                "d": "longtext",
+                "n": "YES",
+                "k": ""
+            },
+            {
+                "c": "type",
+                "d": "varchar",
+                "n": "NO",
+                "k": ""
+            },
+            {
+                "c": "created_at",
+                "d": "timestamp",
+                "n": "YES",
+                "k": ""
+            },
+            {
+                "c": "updated_at",
+                "d": "timestamp",
+                "n": "YES",
+                "k": ""
+            }
+        ],
+        "fks": []
+    },
+    "testimonials": {
+        "cols": [
+            {
+                "c": "id",
+                "d": "bigint",
+                "n": "NO",
+                "k": "PRI"
+            },
+            {
+                "c": "patient_id",
+                "d": "bigint",
+                "n": "YES",
+                "k": "MUL"
+            },
+            {
+                "c": "service_id",
+                "d": "bigint",
+                "n": "YES",
+                "k": "MUL"
+            },
+            {
+                "c": "author_name",
+                "d": "varchar",
+                "n": "NO",
+                "k": ""
+            },
+            {
+                "c": "rating",
+                "d": "tinyint",
+                "n": "NO",
+                "k": ""
+            },
+            {
+                "c": "body",
+                "d": "longtext",
+                "n": "YES",
+                "k": ""
+            },
+            {
+                "c": "position",
+                "d": "int",
+                "n": "NO",
+                "k": ""
+            },
+            {
+                "c": "is_published",
+                "d": "tinyint",
+                "n": "NO",
+                "k": ""
+            },
+            {
+                "c": "created_at",
+                "d": "timestamp",
+                "n": "YES",
+                "k": ""
+            },
+            {
+                "c": "updated_at",
+                "d": "timestamp",
+                "n": "YES",
+                "k": ""
+            }
+        ],
+        "fks": [
+            {
+                "c": "patient_id",
+                "rt": "patients",
+                "rc": "id"
+            },
+            {
+                "c": "service_id",
+                "rt": "services",
+                "rc": "id"
+            }
+        ]
+    },
+    "users": {
+        "cols": [
+            {
+                "c": "id",
+                "d": "bigint",
+                "n": "NO",
+                "k": "PRI"
+            },
+            {
+                "c": "name",
+                "d": "varchar",
+                "n": "NO",
+                "k": ""
+            },
+            {
+                "c": "email",
+                "d": "varchar",
+                "n": "NO",
+                "k": "UNI"
+            },
+            {
+                "c": "is_admin",
+                "d": "tinyint",
+                "n": "NO",
+                "k": ""
+            },
+            {
+                "c": "email_verified_at",
+                "d": "timestamp",
+                "n": "YES",
+                "k": ""
+            },
+            {
+                "c": "password",
+                "d": "varchar",
+                "n": "NO",
+                "k": ""
+            },
+            {
+                "c": "two_factor_secret",
+                "d": "text",
+                "n": "YES",
+                "k": ""
+            },
+            {
+                "c": "two_factor_recovery_codes",
+                "d": "text",
+                "n": "YES",
+                "k": ""
+            },
+            {
+                "c": "two_factor_confirmed_at",
+                "d": "timestamp",
+                "n": "YES",
+                "k": ""
+            },
+            {
+                "c": "remember_token",
+                "d": "varchar",
+                "n": "YES",
+                "k": ""
+            },
+            {
+                "c": "created_at",
+                "d": "timestamp",
+                "n": "YES",
+                "k": ""
+            },
+            {
+                "c": "updated_at",
+                "d": "timestamp",
+                "n": "YES",
+                "k": ""
+            }
+        ],
+        "fks": []
+    }
+}

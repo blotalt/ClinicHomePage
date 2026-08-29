@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="dr-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f5f0e6"/>
+      <stop offset="100%" stop-color="#e8decb"/>
+    </linearGradient>
+    <linearGradient id="dr-linen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#c8d6c7"/>
+      <stop offset="100%" stop-color="#a4b8a2"/>
+    </linearGradient>
+    <linearGradient id="skin-sarah" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f8dcce"/>
+      <stop offset="100%" stop-color="#e8bfad"/>
+    </linearGradient>
+    <linearGradient id="hair-sarah" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#b08359"/>
+      <stop offset="100%" stop-color="#7e5330"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background / Warm Clinic Setting -->
+  <rect width="800" height="500" fill="url(#dr-bg)"/>
+
+  <!-- Clinic Background Shelves with Herbal Bottles & Plants -->
+  <rect x="0" y="240" width="800" height="260" fill="#ded4c0"/>
+  <rect x="0" y="230" width="800" height="15" rx="3" fill="#c4b59c"/>
+  
+  <!-- Bottles on background shelf (left) -->
+  <rect x="60" y="170" width="18" height="60" rx="4" fill="#a48866"/>
+  <rect x="85" y="160" width="22" height="70" rx="4" fill="#6f8872"/>
+  <rect x="115" y="180" width="20" height="50" rx="4" fill="#bfa07e"/>
+  
+  <!-- Plant in Background (Left) -->
+  <circle cx="170" cy="180" r="45" fill="#8cb290" opacity="0.6"/>
+  <circle cx="150" cy="160" r="35" fill="#759c79" opacity="0.7"/>
+  <rect x="155" y="195" width="30" height="35" rx="4" fill="#efe4d2"/>
+
+  <!-- Plant in Background (Right) -->
+  <circle cx="680" cy="170" r="55" fill="#8cb290" opacity="0.6"/>
+  <circle cx="710" cy="150" r="45" fill="#68936d" opacity="0.7"/>
+  <rect x="670" y="190" width="40" height="40" rx="6" fill="#efe4d2"/>
+
+  <!-- Doctor Silhouette / Clothing -->
+  <g id="body">
+    <!-- Linen Top -->
+    <path d="M220 500c10-90 45-160 110-185l70 85 70-85c65 25 100 95 110 185z" fill="url(#dr-linen)"/>
+    <!-- V-Neck Collar detail -->
+    <path d="M330 315l70 100 70-100" stroke="#879e85" stroke-width="4" fill="none"/>
+    <path d="M400 415v85" stroke="#879e85" stroke-width="2" stroke-dasharray="4,4"/>
+  </g>
+
+  <!-- Neck -->
+  <rect x="370" y="240" width="60" height="90" rx="14" fill="url(#skin-sarah)"/>
+  <path d="M370 290c20 15 40 15 60 0" stroke="#d5ab97" stroke-width="3" fill="none"/>
+
+  <!-- Face -->
+  <g id="head">
+    <ellipse cx="400" cy="200" rx="75" ry="95" fill="url(#skin-sarah)"/>
+
+    <!-- Hair (Behind & Framing) -->
+    <path d="M315 200c-10 60 5 120 30 150 15-40 25-90 20-150z" fill="url(#hair-sarah)"/>
+    <path d="M485 200c10 60-5 120-30 150-15-40-25-90-20-150z" fill="url(#hair-sarah)"/>
+    <!-- Hair Top -->
+    <path d="M320 190c-5-85 50-125 80-125s85 40 80 125c-25-35-55-45-80-45s-55 10-80 45z" fill="url(#hair-sarah)"/>
+
+    <!-- Smile & Features -->
+    <!-- Eyebrows -->
+    <path d="M350 160c15-8 30-5 35 0" stroke="#7e5330" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <path d="M415 160c5-5 20-8 35 0" stroke="#7e5330" stroke-width="3" stroke-linecap="round" fill="none"/>
+    
+    <!-- Warm Smiling Eyes -->
+    <path d="M352 178c10-6 22-6 30 2" stroke="#5a3d24" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+    <path d="M418 180c8-8 20-8 30-2" stroke="#5a3d24" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+
+    <!-- Nose -->
+    <path d="M396 185c0 15 4 22 10 24" stroke="#d5ab97" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+
+    <!-- Warm Confident Smile -->
+    <path d="M370 230c15 18 45 18 60 0" stroke="#c0685c" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+    <path d="M375 230c12 12 38 12 50 0" fill="#ffffff"/>
+  </g>
+</svg>

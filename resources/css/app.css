@@ -1,0 +1,529 @@
+@import 'tailwindcss';
+
+@import 'tw-animate-css';
+
+@source '../views';
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+    --font-sans:
+        'Instrument Sans', ui-sans-serif, system-ui, sans-serif,
+        'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+        'Noto Color Emoji';
+
+    --radius-lg: var(--radius);
+    --radius-md: calc(var(--radius) - 2px);
+    --radius-sm: calc(var(--radius) - 4px);
+
+    --color-background: var(--background);
+    --color-foreground: var(--foreground);
+
+    --color-card: var(--card);
+    --color-card-foreground: var(--card-foreground);
+
+    --color-popover: var(--popover);
+    --color-popover-foreground: var(--popover-foreground);
+
+    --color-primary: var(--primary);
+    --color-primary-foreground: var(--primary-foreground);
+
+    --color-secondary: var(--secondary);
+    --color-secondary-foreground: var(--secondary-foreground);
+
+    --color-muted: var(--muted);
+    --color-muted-foreground: var(--muted-foreground);
+
+    --color-accent: var(--accent);
+    --color-accent-foreground: var(--accent-foreground);
+
+    --color-destructive: var(--destructive);
+    --color-destructive-foreground: var(--destructive-foreground);
+
+    --color-border: var(--border);
+    --color-input: var(--input);
+    --color-ring: var(--ring);
+
+    --color-chart-1: var(--chart-1);
+    --color-chart-2: var(--chart-2);
+    --color-chart-3: var(--chart-3);
+    --color-chart-4: var(--chart-4);
+    --color-chart-5: var(--chart-5);
+
+    --color-sidebar: var(--sidebar);
+    --color-sidebar-foreground: var(--sidebar-foreground);
+    --color-sidebar-primary: var(--sidebar-primary);
+    --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+    --color-sidebar-accent: var(--sidebar-accent);
+    --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+    --color-sidebar-border: var(--sidebar-border);
+    --color-sidebar-ring: var(--sidebar-ring);
+}
+
+:root {
+    --background: oklch(1 0 0);
+    --foreground: oklch(0.145 0 0);
+    --card: oklch(1 0 0);
+    --card-foreground: oklch(0.145 0 0);
+    --popover: oklch(1 0 0);
+    --popover-foreground: oklch(0.145 0 0);
+    --primary: oklch(0.205 0 0);
+    --primary-foreground: oklch(0.985 0 0);
+    --secondary: oklch(0.97 0 0);
+    --secondary-foreground: oklch(0.205 0 0);
+    --muted: oklch(0.97 0 0);
+    --muted-foreground: oklch(0.556 0 0);
+    --accent: oklch(0.97 0 0);
+    --accent-foreground: oklch(0.205 0 0);
+    --destructive: oklch(0.577 0.245 27.325);
+    --destructive-foreground: oklch(0.577 0.245 27.325);
+    --border: oklch(0.922 0 0);
+    --input: oklch(0.922 0 0);
+    --ring: oklch(0.87 0 0);
+    --chart-1: oklch(0.646 0.222 41.116);
+    --chart-2: oklch(0.6 0.118 184.704);
+    --chart-3: oklch(0.398 0.07 227.392);
+    --chart-4: oklch(0.828 0.189 84.429);
+    --chart-5: oklch(0.769 0.188 70.08);
+    --radius: 0.625rem;
+    --sidebar: oklch(0.985 0 0);
+    --sidebar-foreground: oklch(0.145 0 0);
+    --sidebar-primary: oklch(0.205 0 0);
+    --sidebar-primary-foreground: oklch(0.985 0 0);
+    --sidebar-accent: oklch(0.97 0 0);
+    --sidebar-accent-foreground: oklch(0.205 0 0);
+    --sidebar-border: oklch(0.922 0 0);
+    --sidebar-ring: oklch(0.87 0 0);
+}
+
+.dark {
+    --background: oklch(0.145 0 0);
+    --foreground: oklch(0.985 0 0);
+    --card: oklch(0.145 0 0);
+    --card-foreground: oklch(0.985 0 0);
+    --popover: oklch(0.145 0 0);
+    --popover-foreground: oklch(0.985 0 0);
+    --primary: oklch(0.985 0 0);
+    --primary-foreground: oklch(0.205 0 0);
+    --secondary: oklch(0.269 0 0);
+    --secondary-foreground: oklch(0.985 0 0);
+    --muted: oklch(0.269 0 0);
+    --muted-foreground: oklch(0.708 0 0);
+    --accent: oklch(0.269 0 0);
+    --accent-foreground: oklch(0.985 0 0);
+    --destructive: oklch(0.396 0.141 25.723);
+    --destructive-foreground: oklch(0.637 0.237 25.331);
+    --border: oklch(0.269 0 0);
+    --input: oklch(0.269 0 0);
+    --ring: oklch(0.439 0 0);
+    --chart-1: oklch(0.488 0.243 264.376);
+    --chart-2: oklch(0.696 0.17 162.48);
+    --chart-3: oklch(0.769 0.188 70.08);
+    --chart-4: oklch(0.627 0.265 303.9);
+    --chart-5: oklch(0.645 0.246 16.439);
+    --sidebar: oklch(0.205 0 0);
+    --sidebar-foreground: oklch(0.985 0 0);
+    --sidebar-primary: oklch(0.985 0 0);
+    --sidebar-primary-foreground: oklch(0.985 0 0);
+    --sidebar-accent: oklch(0.269 0 0);
+    --sidebar-accent-foreground: oklch(0.985 0 0);
+    --sidebar-border: oklch(0.269 0 0);
+    --sidebar-ring: oklch(0.439 0 0);
+}
+
+@layer base {
+    * {
+        @apply border-border;
+    }
+
+    /* Smooth anchor jumps on the landing page. Must sit on the scrolling
+       element, so it belongs here rather than on a wrapper div. */
+    html {
+        @apply scroll-smooth;
+    }
+
+    body {
+        @apply bg-background text-foreground;
+    }
+}
+
+/*
+ * Lumina Wellness brand palette.
+ *
+ * Tailwind v4 merges multiple @theme blocks, so these sit alongside the
+ * shadcn tokens above and generate utilities like `bg-brand`, `text-ink`,
+ * `bg-mint`. Change a value here and it updates everywhere at once.
+ */
+@theme {
+    --color-brand: #1b5a39; /* buttons, logo, links */
+    --color-brand-dark: #134028; /* hover state */
+    --color-brand-soft: #2e6b4a; /* stat card */
+    --color-brand-tint: #dff0e6; /* pale green wash */
+
+    --color-mint: #c9e9e2; /* hero badge, mental wellness card */
+    --color-sage: #dbe6d2; /* nutritional counselling card */
+    --color-sky: #e7f3fb; /* philosophy + footer band */
+    --color-mist: #f4f9fd; /* services band */
+
+    --color-ink: #1a2622; /* headings */
+    --color-ink-soft: #56635f; /* body copy */
+}
+
+/*
+ * Rich text authored in the admin.
+ *
+ * `.site-prose` styles it on the public pages; `.admin-prose` styles it
+ * inside the TipTap editor so what you type looks like what you get.
+ */
+@layer components {
+    .site-prose > :first-child,
+    .admin-prose > :first-child {
+        margin-top: 0;
+    }
+
+    .site-prose > :last-child,
+    .admin-prose > :last-child {
+        margin-bottom: 0;
+    }
+
+    .site-prose p,
+    .admin-prose p {
+        margin-block: 1em;
+        line-height: 1.7;
+    }
+
+    .site-prose h2,
+    .admin-prose h2 {
+        margin-block: 1.4em 0.6em;
+        font-size: 1.25em;
+        font-weight: 600;
+    }
+
+    .site-prose h3,
+    .admin-prose h3 {
+        margin-block: 1.2em 0.5em;
+        font-size: 1.1em;
+        font-weight: 600;
+    }
+
+    .site-prose ul,
+    .admin-prose ul,
+    .site-prose ol,
+    .admin-prose ol {
+        margin-block: 1em;
+        padding-left: 1.5em;
+    }
+
+    .site-prose ul,
+    .admin-prose ul {
+        list-style: disc;
+    }
+
+    .site-prose ol,
+    .admin-prose ol {
+        list-style: decimal;
+    }
+
+    .site-prose li,
+    .admin-prose li {
+        margin-block: 0.35em;
+    }
+
+    .site-prose blockquote,
+    .admin-prose blockquote {
+        margin-block: 1.2em;
+        padding-left: 1em;
+        border-left: 3px solid
+            color-mix(in oklab, currentColor 25%, transparent);
+        font-style: italic;
+    }
+
+    .site-prose a,
+    .admin-prose a {
+        text-decoration: underline;
+        text-underline-offset: 2px;
+    }
+
+    .site-prose code,
+    .admin-prose code {
+        border-radius: 0.25rem;
+        background: color-mix(in oklab, currentColor 10%, transparent);
+        padding: 0.15em 0.35em;
+        font-size: 0.9em;
+    }
+
+    .site-prose hr,
+    .admin-prose hr {
+        margin-block: 1.5em;
+        border-color: color-mix(in oklab, currentColor 20%, transparent);
+    }
+
+    /* TipTap's empty-document placeholder. */
+    .admin-prose p.is-editor-empty:first-child::before {
+        content: attr(data-placeholder);
+        float: left;
+        height: 0;
+        pointer-events: none;
+        color: var(--muted-foreground);
+    }
+}
+
+/*
+ * Clinic-flavoured shadcn palette.
+ *
+ * These re-declare the tokens defined further up, so the admin panel and
+ * every shadcn control picks up the Lumina greens instead of the stock
+ * neutral grey. Declared later at the same specificity, so they win.
+ */
+:root {
+    --background: #f6faf8;
+    --foreground: #16211d;
+
+    --card: #ffffff;
+    --card-foreground: #16211d;
+
+    --popover: #ffffff;
+    --popover-foreground: #16211d;
+
+    --primary: #1b5a39;
+    --primary-foreground: #ffffff;
+
+    --secondary: #e7f3fb;
+    --secondary-foreground: #14402a;
+
+    --muted: #edf4f0;
+    --muted-foreground: #5c6d66;
+
+    --accent: #dff0e6;
+    --accent-foreground: #14402a;
+
+    --destructive: #a92e22;
+    --destructive-foreground: #ffffff;
+
+    --border: #dde8e2;
+    --input: #dde8e2;
+    --ring: #2e6b4a;
+
+    --chart-1: #1b5a39;
+    --chart-2: #2e6b4a;
+    --chart-3: #7fa587;
+    --chart-4: #9fc9bd;
+    --chart-5: #c9e9e2;
+
+    --sidebar: #eef6f1;
+    --sidebar-foreground: #16211d;
+    --sidebar-primary: #1b5a39;
+    --sidebar-primary-foreground: #ffffff;
+    --sidebar-accent: #d8ecdf;
+    --sidebar-accent-foreground: #123a26;
+    --sidebar-border: #d5e6dc;
+    --sidebar-ring: #2e6b4a;
+}
+
+.dark {
+    --background: #0d1512;
+    --foreground: #e7efeb;
+
+    --card: #141f1a;
+    --card-foreground: #e7efeb;
+
+    --popover: #141f1a;
+    --popover-foreground: #e7efeb;
+
+    --primary: #6fc79c;
+    --primary-foreground: #08160f;
+
+    --secondary: #1c2b25;
+    --secondary-foreground: #e7efeb;
+
+    --muted: #1a2621;
+    --muted-foreground: #9bb0a7;
+
+    --accent: #1f342a;
+    --accent-foreground: #d7f0e2;
+
+    --destructive: #6b241c;
+    --destructive-foreground: #ffb4a8;
+
+    --border: #24332c;
+    --input: #24332c;
+    --ring: #4f9b76;
+
+    --chart-1: #6fc79c;
+    --chart-2: #4f9b76;
+    --chart-3: #9fc9bd;
+    --chart-4: #2e6b4a;
+    --chart-5: #c9e9e2;
+
+    --sidebar: #101a16;
+    --sidebar-foreground: #e7efeb;
+    --sidebar-primary: #6fc79c;
+    --sidebar-primary-foreground: #08160f;
+    --sidebar-accent: #1d2f27;
+    --sidebar-accent-foreground: #d7f0e2;
+    --sidebar-border: #22302a;
+    --sidebar-ring: #4f9b76;
+}
+
+/* Global Typography Scaling & Custom Scrollbars */
+html {
+    font-size: 17.5px;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 18px;
+    }
+}
+
+body {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Modern Fade In Up Keyframes & Utilities */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(28px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in-up {
+    animation: fadeInUp 0.65s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+@keyframes heartCharge {
+    0% {
+        clip-path: inset(100% 0 0 0);
+        opacity: 0.85;
+        transform: scale(1);
+        filter: drop-shadow(0 0 0px transparent);
+    }
+    38% {
+        clip-path: inset(0% 0 0 0);
+        opacity: 1;
+        transform: scale(1);
+        filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.5));
+    }
+    46% {
+        clip-path: inset(0% 0 0 0);
+        transform: scale(1.24);
+        filter: drop-shadow(0 0 12px rgba(255, 255, 255, 1)) drop-shadow(0 0 22px rgba(134, 239, 172, 0.9));
+    }
+    54% {
+        clip-path: inset(0% 0 0 0);
+        transform: scale(1);
+        filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5));
+    }
+    62% {
+        clip-path: inset(0% 0 0 0);
+        transform: scale(1.16);
+        filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.9)) drop-shadow(0 0 16px rgba(134, 239, 172, 0.7));
+    }
+    70% {
+        clip-path: inset(0% 0 0 0);
+        transform: scale(1);
+        filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.4));
+    }
+    88% {
+        clip-path: inset(0% 0 0 0);
+        opacity: 1;
+        transform: scale(1);
+    }
+    94% {
+        clip-path: inset(0% 0 0 0);
+        opacity: 0.5;
+    }
+    100% {
+        clip-path: inset(100% 0 0 0);
+        opacity: 0.85;
+        transform: scale(1);
+    }
+}
+
+.animate-heart-charge {
+    animation: heartCharge 3.4s cubic-bezier(0.35, 0, 0.25, 1) infinite;
+    transform-origin: center center;
+}
+
+@keyframes heartPulseGlow {
+    0%, 100% {
+        opacity: 0.1;
+        transform: scale(0.85);
+    }
+    38% {
+        opacity: 0.25;
+        transform: scale(1.05);
+    }
+    46% {
+        opacity: 0.8;
+        transform: scale(1.4);
+    }
+    54% {
+        opacity: 0.3;
+        transform: scale(1.1);
+    }
+    62% {
+        opacity: 0.7;
+        transform: scale(1.3);
+    }
+    70% {
+        opacity: 0.25;
+        transform: scale(1);
+    }
+    88% {
+        opacity: 0.2;
+    }
+}
+
+.animate-heart-glow {
+    animation: heartPulseGlow 3.4s cubic-bezier(0.35, 0, 0.25, 1) infinite;
+    transform-origin: center center;
+}
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(16, 72, 56, 0.35) transparent;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(16, 72, 56, 0.3);
+    border-radius: 9999px;
+    border: 2px solid transparent;
+    background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(16, 72, 56, 0.6);
+}
+
+.dark * {
+    scrollbar-color: rgba(111, 199, 156, 0.4) transparent;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+    background-color: rgba(111, 199, 156, 0.35);
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(111, 199, 156, 0.65);
+}
+

@@ -1,0 +1,388 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1950" height="1035" viewBox="0 0 1950 1035" font-family="Inter, 'Instrument Sans', Segoe UI, sans-serif">
+<rect width="1950" height="1035" fill="#f6faf8"/>
+<text x="40" y="46" font-size="26" font-weight="600" fill="#16211d">Lumina Wellness — database schema</text>
+<text x="40" y="68" font-size="13" fill="#5c6d66">13 tables · generated from the live MySQL schema</text>
+<path d="M1000,236 C805,236 805,236 610,236" fill="none" stroke="#7fa587" stroke-width="1.6" stroke-opacity="0.75"/>
+<path d="M1000,236 l7,-5 M1000,236 l7,0 M1000,236 l7,5" fill="none" stroke="#7fa587" stroke-width="1.6"/>
+<circle cx="610" cy="236" r="3.5" fill="#7fa587"/>
+<path d="M1000,236 C965,236 965,207 930,207" fill="none" stroke="#7fa587" stroke-width="1.6" stroke-opacity="0.75"/>
+<path d="M1000,236 l7,-5 M1000,236 l7,0 M1000,236 l7,5" fill="none" stroke="#7fa587" stroke-width="1.6"/>
+<circle cx="930" cy="207" r="3.5" fill="#7fa587"/>
+<path d="M1000,236 C805,236 805,580 610,580" fill="none" stroke="#7fa587" stroke-width="1.6" stroke-opacity="0.75"/>
+<path d="M1000,236 l7,-5 M1000,236 l7,0 M1000,236 l7,5" fill="none" stroke="#7fa587" stroke-width="1.6"/>
+<circle cx="610" cy="580" r="3.5" fill="#7fa587"/>
+<path d="M1320,216 C1285,216 1285,236 1250,236" fill="none" stroke="#7fa587" stroke-width="1.6" stroke-opacity="0.75"/>
+<path d="M1320,216 l7,-5 M1320,216 l7,0 M1320,216 l7,5" fill="none" stroke="#7fa587" stroke-width="1.6"/>
+<circle cx="1250" cy="236" r="3.5" fill="#7fa587"/>
+<path d="M1320,216 C965,216 965,236 610,236" fill="none" stroke="#7fa587" stroke-width="1.6" stroke-opacity="0.75"/>
+<path d="M1320,216 l7,-5 M1320,216 l7,0 M1320,216 l7,5" fill="none" stroke="#7fa587" stroke-width="1.6"/>
+<circle cx="610" cy="236" r="3.5" fill="#7fa587"/>
+<path d="M1320,216 C1125,216 1125,207 930,207" fill="none" stroke="#7fa587" stroke-width="1.6" stroke-opacity="0.75"/>
+<path d="M1320,216 l7,-5 M1320,216 l7,0 M1320,216 l7,5" fill="none" stroke="#7fa587" stroke-width="1.6"/>
+<circle cx="930" cy="207" r="3.5" fill="#7fa587"/>
+<path d="M1320,216 C965,216 965,580 610,580" fill="none" stroke="#7fa587" stroke-width="1.6" stroke-opacity="0.75"/>
+<path d="M1320,216 l7,-5 M1320,216 l7,0 M1320,216 l7,5" fill="none" stroke="#7fa587" stroke-width="1.6"/>
+<circle cx="610" cy="580" r="3.5" fill="#7fa587"/>
+<path d="M360,877 C325,877 325,514 290,514" fill="none" stroke="#7fa587" stroke-width="1.6" stroke-opacity="0.75"/>
+<path d="M360,877 l7,-5 M360,877 l7,0 M360,877 l7,5" fill="none" stroke="#7fa587" stroke-width="1.6"/>
+<circle cx="290" cy="514" r="3.5" fill="#7fa587"/>
+<path d="M680,438 C645,438 645,236 610,236" fill="none" stroke="#7fa587" stroke-width="1.6" stroke-opacity="0.75"/>
+<path d="M680,438 l7,-5 M680,438 l7,0 M680,438 l7,5" fill="none" stroke="#7fa587" stroke-width="1.6"/>
+<circle cx="610" cy="236" r="3.5" fill="#7fa587"/>
+<path d="M680,438 C645,438 645,580 610,580" fill="none" stroke="#7fa587" stroke-width="1.6" stroke-opacity="0.75"/>
+<path d="M680,438 l7,-5 M680,438 l7,0 M680,438 l7,5" fill="none" stroke="#7fa587" stroke-width="1.6"/>
+<circle cx="610" cy="580" r="3.5" fill="#7fa587"/>
+<path d="M360,236 C325,236 325,514 290,514" fill="none" stroke="#7fa587" stroke-width="1.6" stroke-opacity="0.75"/>
+<path d="M360,236 l7,-5 M360,236 l7,0 M360,236 l7,5" fill="none" stroke="#7fa587" stroke-width="1.6"/>
+<circle cx="290" cy="514" r="3.5" fill="#7fa587"/>
+<path d="M360,236 C325,236 325,226 290,226" fill="none" stroke="#7fa587" stroke-width="1.6" stroke-opacity="0.75"/>
+<path d="M360,236 l7,-5 M360,236 l7,0 M360,236 l7,5" fill="none" stroke="#7fa587" stroke-width="1.6"/>
+<circle cx="290" cy="226" r="3.5" fill="#7fa587"/>
+<path d="M1640,188 C965,188 965,226 290,226" fill="none" stroke="#7fa587" stroke-width="1.6" stroke-opacity="0.75"/>
+<path d="M1640,188 l7,-5 M1640,188 l7,0 M1640,188 l7,5" fill="none" stroke="#7fa587" stroke-width="1.6"/>
+<circle cx="290" cy="226" r="3.5" fill="#7fa587"/>
+<path d="M680,207 C485,207 485,226 290,226" fill="none" stroke="#7fa587" stroke-width="1.6" stroke-opacity="0.75"/>
+<path d="M680,207 l7,-5 M680,207 l7,0 M680,207 l7,5" fill="none" stroke="#7fa587" stroke-width="1.6"/>
+<circle cx="290" cy="226" r="3.5" fill="#7fa587"/>
+<path d="M360,580 C325,580 325,514 290,514" fill="none" stroke="#7fa587" stroke-width="1.6" stroke-opacity="0.75"/>
+<path d="M360,580 l7,-5 M360,580 l7,0 M360,580 l7,5" fill="none" stroke="#7fa587" stroke-width="1.6"/>
+<circle cx="290" cy="514" r="3.5" fill="#7fa587"/>
+<path d="M1320,504 C1125,504 1125,207 930,207" fill="none" stroke="#7fa587" stroke-width="1.6" stroke-opacity="0.75"/>
+<path d="M1320,504 l7,-5 M1320,504 l7,0 M1320,504 l7,5" fill="none" stroke="#7fa587" stroke-width="1.6"/>
+<circle cx="930" cy="207" r="3.5" fill="#7fa587"/>
+<path d="M1320,504 C965,504 965,580 610,580" fill="none" stroke="#7fa587" stroke-width="1.6" stroke-opacity="0.75"/>
+<path d="M1320,504 l7,-5 M1320,504 l7,0 M1320,504 l7,5" fill="none" stroke="#7fa587" stroke-width="1.6"/>
+<circle cx="610" cy="580" r="3.5" fill="#7fa587"/>
+<rect x="40" y="90" width="250" height="272" rx="10" fill="#ffffff" stroke="#cfe0d7" stroke-width="1.5"/>
+<path d="M40,124 v-24 a10,10 0 0 1 10,-10 h230 a10,10 0 0 1 10,10 v24 z" fill="#1b5a39"/>
+<text x="54" y="112" font-size="13.5" font-weight="600" fill="#ffffff">users</text>
+<text x="52" y="138" font-size="8.5" font-weight="700" fill="#1b5a39" font-family="'JetBrains Mono', Consolas, monospace">PK</text>
+<text x="76" y="138" font-size="11" fill="#16211d" font-family="'JetBrains Mono', Consolas, monospace">id</text>
+<text x="278" y="138" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">bigint</text>
+<text x="76" y="157" font-size="11" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace">name</text>
+<text x="278" y="157" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">varchar</text>
+<text x="76" y="176" font-size="11" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace">email</text>
+<text x="278" y="176" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">varchar</text>
+<text x="76" y="195" font-size="11" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace">is_admin</text>
+<text x="278" y="195" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">tinyint</text>
+<text x="76" y="214" font-size="11" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace">email_verified_at</text>
+<text x="278" y="214" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">timestamp?</text>
+<text x="76" y="233" font-size="11" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace">password</text>
+<text x="278" y="233" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">varchar</text>
+<text x="76" y="252" font-size="11" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace">two_factor_secret</text>
+<text x="278" y="252" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">text?</text>
+<text x="76" y="271" font-size="11" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace">two_factor_recovery_codes</text>
+<text x="278" y="271" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">text?</text>
+<text x="76" y="290" font-size="11" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace">two_factor_confirmed_at</text>
+<text x="278" y="290" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">timestamp?</text>
+<text x="76" y="309" font-size="11" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace">remember_token</text>
+<text x="278" y="309" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">varchar?</text>
+<text x="76" y="328" font-size="11" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace">created_at</text>
+<text x="278" y="328" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">timestamp?</text>
+<text x="76" y="347" font-size="11" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace">updated_at</text>
+<text x="278" y="347" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">timestamp?</text>
+<rect x="40" y="406" width="250" height="215" rx="10" fill="#ffffff" stroke="#cfe0d7" stroke-width="1.5"/>
+<path d="M40,440 v-24 a10,10 0 0 1 10,-10 h230 a10,10 0 0 1 10,10 v24 z" fill="#1b5a39"/>
+<text x="54" y="428" font-size="13.5" font-weight="600" fill="#ffffff">departments</text>
+<text x="52" y="454" font-size="8.5" font-weight="700" fill="#1b5a39" font-family="'JetBrains Mono', Consolas, monospace">PK</text>
+<text x="76" y="454" font-size="11" fill="#16211d" font-family="'JetBrains Mono', Consolas, monospace">id</text>
+<text x="278" y="454" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">bigint</text>
+<text x="76" y="473" font-size="11" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace">name</text>
+<text x="278" y="473" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">varchar</text>
+<text x="76" y="492" font-size="11" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace">slug</text>
+<text x="278" y="492" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">varchar</text>
+<text x="76" y="511" font-size="11" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace">description</text>
+<text x="278" y="511" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">text?</text>
+<text x="76" y="530" font-size="11" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace">icon</text>
+<text x="278" y="530" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">varchar?</text>
+<text x="76" y="549" font-size="11" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace">position</text>
+<text x="278" y="549" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">int</text>
+<text x="76" y="568" font-size="11" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace">is_published</text>
+<text x="278" y="568" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">tinyint</text>
+<text x="76" y="587" font-size="11" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace">created_at</text>
+<text x="278" y="587" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">timestamp?</text>
+<text x="76" y="606" font-size="11" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace">updated_at</text>
+<text x="278" y="606" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">timestamp?</text>
+<rect x="360" y="90" width="250" height="291" rx="10" fill="#ffffff" stroke="#cfe0d7" stroke-width="1.5"/>
+<path d="M360,124 v-24 a10,10 0 0 1 10,-10 h230 a10,10 0 0 1 10,10 v24 z" fill="#1b5a39"/>
+<text x="374" y="112" font-size="13.5" font-weight="600" fill="#ffffff">doctors</text>
+<text x="372" y="138" font-size="8.5" font-weight="700" fill="#1b5a39" font-family="'JetBrains Mono', Consolas, monospace">PK</text>
+<text x="396" y="138" font-size="11" fill="#16211d" font-family="'JetBrains Mono', Consolas, monospace">id</text>
+<text x="598" y="138" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">bigint</text>
+<text x="372" y="157" font-size="8.5" font-weight="700" fill="#2e6b4a" font-family="'JetBrains Mono', Consolas, monospace">FK</text>
+<text x="396" y="157" font-size="11" fill="#16211d" font-family="'JetBrains Mono', Consolas, monospace">department_id</text>
+<text x="598" y="157" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">bigint?</text>
+<text x="372" y="176" font-size="8.5" font-weight="700" fill="#2e6b4a" font-family="'JetBrains Mono', Consolas, monospace">FK</text>
+<text x="396" y="176" font-size="11" fill="#16211d" font-family="'JetBrains Mono', Consolas, monospace">user_id</text>
+<text x="598" y="176" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">bigint?</text>
+<text x="396" y="195" font-size="11" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace">name</text>
+<text x="598" y="195" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">varchar</text>
+<text x="396" y="214" font-size="11" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace">slug</text>
+<text x="598" y="214" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">varchar</text>
+<text x="396" y="233" font-size="11" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace">title</text>
+<text x="598" y="233" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">varchar?</text>
+<text x="396" y="252" font-size="11" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace">bio</text>
+<text x="598" y="252" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">longtext?</text>
+<text x="396" y="271" font-size="11" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace">photo_path</text>
+<text x="598" y="271" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">varchar?</text>
+<text x="396" y="290" font-size="11" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace">email</text>
+<text x="598" y="290" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">varchar?</text>
+<text x="396" y="309" font-size="11" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace">position</text>
+<text x="598" y="309" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">int</text>
+<text x="396" y="328" font-size="11" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace">is_published</text>
+<text x="598" y="328" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">tinyint</text>
+<text x="396" y="347" font-size="11" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace">created_at</text>
+<text x="598" y="347" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">timestamp?</text>
+<text x="396" y="366" font-size="11" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace">updated_at</text>
+<text x="598" y="366" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">timestamp?</text>
+<rect x="360" y="425" width="250" height="310" rx="10" fill="#ffffff" stroke="#cfe0d7" stroke-width="1.5"/>
+<path d="M360,459 v-24 a10,10 0 0 1 10,-10 h230 a10,10 0 0 1 10,10 v24 z" fill="#1b5a39"/>
+<text x="374" y="447" font-size="13.5" font-weight="600" fill="#ffffff">services</text>
+<text x="372" y="473" font-size="8.5" font-weight="700" fill="#1b5a39" font-family="'JetBrains Mono', Consolas, monospace">PK</text>
+<text x="396" y="473" font-size="11" fill="#16211d" font-family="'JetBrains Mono', Consolas, monospace">id</text>
+<text x="598" y="473" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">bigint</text>
+<text x="372" y="492" font-size="8.5" font-weight="700" fill="#2e6b4a" font-family="'JetBrains Mono', Consolas, monospace">FK</text>
+<text x="396" y="492" font-size="11" fill="#16211d" font-family="'JetBrains Mono', Consolas, monospace">department_id</text>
+<text x="598" y="492" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">bigint?</text>
+<text x="396" y="511" font-size="11" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace">title</text>
+<text x="598" y="511" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">varchar</text>
+<text x="396" y="530" font-size="11" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace">slug</text>
+<text x="598" y="530" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">varchar</text>
+<text x="396" y="549" font-size="11" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace">body</text>
+<text x="598" y="549" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">longtext?</text>
+<text x="396" y="568" font-size="11" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace">icon</text>
+<text x="598" y="568" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">varchar?</text>
+<text x="396" y="587" font-size="11" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace">image_path</text>
+<text x="598" y="587" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">varchar?</text>
+<text x="396" y="606" font-size="11" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace">duration_minutes</text>
+<text x="598" y="606" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">smallint?</text>
+<text x="396" y="625" font-size="11" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace">price</text>
+<text x="598" y="625" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">decimal?</text>
+<text x="396" y="644" font-size="11" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace">meta</text>
+<text x="598" y="644" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">json?</text>
+<text x="396" y="663" font-size="11" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace">position</text>
+<text x="598" y="663" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">int</text>
+<text x="396" y="682" font-size="11" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace">is_published</text>
+<text x="598" y="682" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">tinyint</text>
+<text x="396" y="701" font-size="11" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace">created_at</text>
+<text x="598" y="701" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">timestamp?</text>
+<text x="396" y="720" font-size="11" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace">updated_at</text>
+<text x="598" y="720" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">timestamp?</text>
+<rect x="360" y="779" width="250" height="196" rx="10" fill="#ffffff" stroke="#cfe0d7" stroke-width="1.5"/>
+<path d="M360,813 v-24 a10,10 0 0 1 10,-10 h230 a10,10 0 0 1 10,10 v24 z" fill="#1b5a39"/>
+<text x="374" y="801" font-size="13.5" font-weight="600" fill="#ffffff">clinic_hours</text>
+<text x="372" y="827" font-size="8.5" font-weight="700" fill="#1b5a39" font-family="'JetBrains Mono', Consolas, monospace">PK</text>
+<text x="396" y="827" font-size="11" fill="#16211d" font-family="'JetBrains Mono', Consolas, monospace">id</text>
+<text x="598" y="827" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">bigint</text>
+<text x="372" y="846" font-size="8.5" font-weight="700" fill="#2e6b4a" font-family="'JetBrains Mono', Consolas, monospace">FK</text>
+<text x="396" y="846" font-size="11" fill="#16211d" font-family="'JetBrains Mono', Consolas, monospace">department_id</text>
+<text x="598" y="846" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">bigint?</text>
+<text x="396" y="865" font-size="11" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace">day_of_week</text>
+<text x="598" y="865" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">tinyint</text>
+<text x="396" y="884" font-size="11" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace">opens_at</text>
+<text x="598" y="884" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">time?</text>
+<text x="396" y="903" font-size="11" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace">closes_at</text>
+<text x="598" y="903" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">time?</text>
+<text x="396" y="922" font-size="11" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace">is_closed</text>
+<text x="598" y="922" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">tinyint</text>
+<text x="396" y="941" font-size="11" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace">created_at</text>
+<text x="598" y="941" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">timestamp?</text>
+<text x="396" y="960" font-size="11" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace">updated_at</text>
+<text x="598" y="960" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">timestamp?</text>
+<rect x="680" y="90" width="250" height="234" rx="10" fill="#ffffff" stroke="#cfe0d7" stroke-width="1.5"/>
+<path d="M680,124 v-24 a10,10 0 0 1 10,-10 h230 a10,10 0 0 1 10,10 v24 z" fill="#1b5a39"/>
+<text x="694" y="112" font-size="13.5" font-weight="600" fill="#ffffff">patients</text>
+<text x="692" y="138" font-size="8.5" font-weight="700" fill="#1b5a39" font-family="'JetBrains Mono', Consolas, monospace">PK</text>
+<text x="716" y="138" font-size="11" fill="#16211d" font-family="'JetBrains Mono', Consolas, monospace">id</text>
+<text x="918" y="138" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">bigint</text>
+<text x="692" y="157" font-size="8.5" font-weight="700" fill="#2e6b4a" font-family="'JetBrains Mono', Consolas, monospace">FK</text>
+<text x="716" y="157" font-size="11" fill="#16211d" font-family="'JetBrains Mono', Consolas, monospace">user_id</text>
+<text x="918" y="157" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">bigint?</text>
+<text x="716" y="176" font-size="11" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace">first_name</text>
+<text x="918" y="176" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">varchar</text>
+<text x="716" y="195" font-size="11" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace">last_name</text>
+<text x="918" y="195" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">varchar</text>
+<text x="716" y="214" font-size="11" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace">email</text>
+<text x="918" y="214" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">varchar</text>
+<text x="716" y="233" font-size="11" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace">phone</text>
+<text x="918" y="233" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">varchar?</text>
+<text x="716" y="252" font-size="11" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace">date_of_birth</text>
+<text x="918" y="252" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">date?</text>
+<text x="716" y="271" font-size="11" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace">notes</text>
+<text x="918" y="271" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">text?</text>
+<text x="716" y="290" font-size="11" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace">created_at</text>
+<text x="918" y="290" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">timestamp?</text>
+<text x="716" y="309" font-size="11" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace">updated_at</text>
+<text x="918" y="309" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">timestamp?</text>
+<rect x="680" y="368" width="250" height="139" rx="10" fill="#ffffff" stroke="#cfe0d7" stroke-width="1.5"/>
+<path d="M680,402 v-24 a10,10 0 0 1 10,-10 h230 a10,10 0 0 1 10,10 v24 z" fill="#1b5a39"/>
+<text x="694" y="390" font-size="13.5" font-weight="600" fill="#ffffff">doctor_service</text>
+<text x="692" y="416" font-size="8.5" font-weight="700" fill="#1b5a39" font-family="'JetBrains Mono', Consolas, monospace">PK</text>
+<text x="716" y="416" font-size="11" fill="#16211d" font-family="'JetBrains Mono', Consolas, monospace">id</text>
+<text x="918" y="416" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">bigint</text>
+<text x="692" y="435" font-size="8.5" font-weight="700" fill="#2e6b4a" font-family="'JetBrains Mono', Consolas, monospace">FK</text>
+<text x="716" y="435" font-size="11" fill="#16211d" font-family="'JetBrains Mono', Consolas, monospace">doctor_id</text>
+<text x="918" y="435" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">bigint</text>
+<text x="692" y="454" font-size="8.5" font-weight="700" fill="#2e6b4a" font-family="'JetBrains Mono', Consolas, monospace">FK</text>
+<text x="716" y="454" font-size="11" fill="#16211d" font-family="'JetBrains Mono', Consolas, monospace">service_id</text>
+<text x="918" y="454" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">bigint</text>
+<text x="716" y="473" font-size="11" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace">created_at</text>
+<text x="918" y="473" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">timestamp?</text>
+<text x="716" y="492" font-size="11" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace">updated_at</text>
+<text x="918" y="492" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">timestamp?</text>
+<rect x="1000" y="90" width="250" height="291" rx="10" fill="#ffffff" stroke="#cfe0d7" stroke-width="1.5"/>
+<path d="M1000,124 v-24 a10,10 0 0 1 10,-10 h230 a10,10 0 0 1 10,10 v24 z" fill="#1b5a39"/>
+<text x="1014" y="112" font-size="13.5" font-weight="600" fill="#ffffff">appointment_requests</text>
+<text x="1012" y="138" font-size="8.5" font-weight="700" fill="#1b5a39" font-family="'JetBrains Mono', Consolas, monospace">PK</text>
+<text x="1036" y="138" font-size="11" fill="#16211d" font-family="'JetBrains Mono', Consolas, monospace">id</text>
+<text x="1238" y="138" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">bigint</text>
+<text x="1036" y="157" font-size="11" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace">first_name</text>
+<text x="1238" y="157" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">varchar</text>
+<text x="1036" y="176" font-size="11" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace">last_name</text>
+<text x="1238" y="176" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">varchar</text>
+<text x="1036" y="195" font-size="11" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace">email</text>
+<text x="1238" y="195" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">varchar</text>
+<text x="1036" y="214" font-size="11" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace">phone</text>
+<text x="1238" y="214" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">varchar?</text>
+<text x="1012" y="233" font-size="8.5" font-weight="700" fill="#2e6b4a" font-family="'JetBrains Mono', Consolas, monospace">FK</text>
+<text x="1036" y="233" font-size="11" fill="#16211d" font-family="'JetBrains Mono', Consolas, monospace">service_id</text>
+<text x="1238" y="233" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">bigint?</text>
+<text x="1012" y="252" font-size="8.5" font-weight="700" fill="#2e6b4a" font-family="'JetBrains Mono', Consolas, monospace">FK</text>
+<text x="1036" y="252" font-size="11" fill="#16211d" font-family="'JetBrains Mono', Consolas, monospace">doctor_id</text>
+<text x="1238" y="252" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">bigint?</text>
+<text x="1012" y="271" font-size="8.5" font-weight="700" fill="#2e6b4a" font-family="'JetBrains Mono', Consolas, monospace">FK</text>
+<text x="1036" y="271" font-size="11" fill="#16211d" font-family="'JetBrains Mono', Consolas, monospace">patient_id</text>
+<text x="1238" y="271" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">bigint?</text>
+<text x="1036" y="290" font-size="11" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace">service</text>
+<text x="1238" y="290" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">varchar?</text>
+<text x="1036" y="309" font-size="11" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace">message</text>
+<text x="1238" y="309" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">text</text>
+<text x="1036" y="328" font-size="11" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace">read_at</text>
+<text x="1238" y="328" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">timestamp?</text>
+<text x="1036" y="347" font-size="11" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace">created_at</text>
+<text x="1238" y="347" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">timestamp?</text>
+<text x="1036" y="366" font-size="11" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace">updated_at</text>
+<text x="1238" y="366" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">timestamp?</text>
+<rect x="1320" y="90" width="250" height="253" rx="10" fill="#ffffff" stroke="#cfe0d7" stroke-width="1.5"/>
+<path d="M1320,124 v-24 a10,10 0 0 1 10,-10 h230 a10,10 0 0 1 10,10 v24 z" fill="#1b5a39"/>
+<text x="1334" y="112" font-size="13.5" font-weight="600" fill="#ffffff">appointments</text>
+<text x="1332" y="138" font-size="8.5" font-weight="700" fill="#1b5a39" font-family="'JetBrains Mono', Consolas, monospace">PK</text>
+<text x="1356" y="138" font-size="11" fill="#16211d" font-family="'JetBrains Mono', Consolas, monospace">id</text>
+<text x="1558" y="138" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">bigint</text>
+<text x="1332" y="157" font-size="8.5" font-weight="700" fill="#2e6b4a" font-family="'JetBrains Mono', Consolas, monospace">FK</text>
+<text x="1356" y="157" font-size="11" fill="#16211d" font-family="'JetBrains Mono', Consolas, monospace">patient_id</text>
+<text x="1558" y="157" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">bigint</text>
+<text x="1332" y="176" font-size="8.5" font-weight="700" fill="#2e6b4a" font-family="'JetBrains Mono', Consolas, monospace">FK</text>
+<text x="1356" y="176" font-size="11" fill="#16211d" font-family="'JetBrains Mono', Consolas, monospace">doctor_id</text>
+<text x="1558" y="176" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">bigint?</text>
+<text x="1332" y="195" font-size="8.5" font-weight="700" fill="#2e6b4a" font-family="'JetBrains Mono', Consolas, monospace">FK</text>
+<text x="1356" y="195" font-size="11" fill="#16211d" font-family="'JetBrains Mono', Consolas, monospace">service_id</text>
+<text x="1558" y="195" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">bigint?</text>
+<text x="1332" y="214" font-size="8.5" font-weight="700" fill="#2e6b4a" font-family="'JetBrains Mono', Consolas, monospace">FK</text>
+<text x="1356" y="214" font-size="11" fill="#16211d" font-family="'JetBrains Mono', Consolas, monospace">appointment_request_id</text>
+<text x="1558" y="214" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">bigint?</text>
+<text x="1356" y="233" font-size="11" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace">scheduled_at</text>
+<text x="1558" y="233" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">datetime</text>
+<text x="1356" y="252" font-size="11" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace">duration_minutes</text>
+<text x="1558" y="252" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">smallint</text>
+<text x="1356" y="271" font-size="11" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace">status</text>
+<text x="1558" y="271" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">varchar</text>
+<text x="1356" y="290" font-size="11" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace">notes</text>
+<text x="1558" y="290" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">text?</text>
+<text x="1356" y="309" font-size="11" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace">created_at</text>
+<text x="1558" y="309" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">timestamp?</text>
+<text x="1356" y="328" font-size="11" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace">updated_at</text>
+<text x="1558" y="328" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">timestamp?</text>
+<rect x="1320" y="387" width="250" height="234" rx="10" fill="#ffffff" stroke="#cfe0d7" stroke-width="1.5"/>
+<path d="M1320,421 v-24 a10,10 0 0 1 10,-10 h230 a10,10 0 0 1 10,10 v24 z" fill="#1b5a39"/>
+<text x="1334" y="409" font-size="13.5" font-weight="600" fill="#ffffff">testimonials</text>
+<text x="1332" y="435" font-size="8.5" font-weight="700" fill="#1b5a39" font-family="'JetBrains Mono', Consolas, monospace">PK</text>
+<text x="1356" y="435" font-size="11" fill="#16211d" font-family="'JetBrains Mono', Consolas, monospace">id</text>
+<text x="1558" y="435" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">bigint</text>
+<text x="1332" y="454" font-size="8.5" font-weight="700" fill="#2e6b4a" font-family="'JetBrains Mono', Consolas, monospace">FK</text>
+<text x="1356" y="454" font-size="11" fill="#16211d" font-family="'JetBrains Mono', Consolas, monospace">patient_id</text>
+<text x="1558" y="454" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">bigint?</text>
+<text x="1332" y="473" font-size="8.5" font-weight="700" fill="#2e6b4a" font-family="'JetBrains Mono', Consolas, monospace">FK</text>
+<text x="1356" y="473" font-size="11" fill="#16211d" font-family="'JetBrains Mono', Consolas, monospace">service_id</text>
+<text x="1558" y="473" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">bigint?</text>
+<text x="1356" y="492" font-size="11" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace">author_name</text>
+<text x="1558" y="492" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">varchar</text>
+<text x="1356" y="511" font-size="11" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace">rating</text>
+<text x="1558" y="511" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">tinyint</text>
+<text x="1356" y="530" font-size="11" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace">body</text>
+<text x="1558" y="530" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">longtext?</text>
+<text x="1356" y="549" font-size="11" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace">position</text>
+<text x="1558" y="549" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">int</text>
+<text x="1356" y="568" font-size="11" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace">is_published</text>
+<text x="1558" y="568" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">tinyint</text>
+<text x="1356" y="587" font-size="11" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace">created_at</text>
+<text x="1558" y="587" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">timestamp?</text>
+<text x="1356" y="606" font-size="11" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace">updated_at</text>
+<text x="1558" y="606" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">timestamp?</text>
+<rect x="1640" y="90" width="250" height="196" rx="10" fill="#ffffff" stroke="#cfe0d7" stroke-width="1.5"/>
+<path d="M1640,124 v-24 a10,10 0 0 1 10,-10 h230 a10,10 0 0 1 10,10 v24 z" fill="#1b5a39"/>
+<text x="1654" y="112" font-size="13.5" font-weight="600" fill="#ffffff">passkeys</text>
+<text x="1652" y="138" font-size="8.5" font-weight="700" fill="#1b5a39" font-family="'JetBrains Mono', Consolas, monospace">PK</text>
+<text x="1676" y="138" font-size="11" fill="#16211d" font-family="'JetBrains Mono', Consolas, monospace">id</text>
+<text x="1878" y="138" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">bigint</text>
+<text x="1652" y="157" font-size="8.5" font-weight="700" fill="#2e6b4a" font-family="'JetBrains Mono', Consolas, monospace">FK</text>
+<text x="1676" y="157" font-size="11" fill="#16211d" font-family="'JetBrains Mono', Consolas, monospace">user_id</text>
+<text x="1878" y="157" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">bigint</text>
+<text x="1676" y="176" font-size="11" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace">name</text>
+<text x="1878" y="176" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">varchar</text>
+<text x="1676" y="195" font-size="11" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace">credential_id</text>
+<text x="1878" y="195" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">varchar</text>
+<text x="1676" y="214" font-size="11" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace">credential</text>
+<text x="1878" y="214" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">json</text>
+<text x="1676" y="233" font-size="11" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace">last_used_at</text>
+<text x="1878" y="233" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">timestamp?</text>
+<text x="1676" y="252" font-size="11" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace">created_at</text>
+<text x="1878" y="252" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">timestamp?</text>
+<text x="1676" y="271" font-size="11" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace">updated_at</text>
+<text x="1878" y="271" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">timestamp?</text>
+<rect x="1640" y="330" width="250" height="253" rx="10" fill="#ffffff" stroke="#cfe0d7" stroke-width="1.5"/>
+<path d="M1640,364 v-24 a10,10 0 0 1 10,-10 h230 a10,10 0 0 1 10,10 v24 z" fill="#b48a5a"/>
+<text x="1654" y="352" font-size="13.5" font-weight="600" fill="#ffffff">content_items</text>
+<text x="1652" y="378" font-size="8.5" font-weight="700" fill="#1b5a39" font-family="'JetBrains Mono', Consolas, monospace">PK</text>
+<text x="1676" y="378" font-size="11" fill="#16211d" font-family="'JetBrains Mono', Consolas, monospace">id</text>
+<text x="1878" y="378" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">bigint</text>
+<text x="1676" y="397" font-size="11" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace">collection</text>
+<text x="1878" y="397" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">varchar</text>
+<text x="1676" y="416" font-size="11" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace">title</text>
+<text x="1878" y="416" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">varchar</text>
+<text x="1676" y="435" font-size="11" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace">body</text>
+<text x="1878" y="435" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">longtext?</text>
+<text x="1676" y="454" font-size="11" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace">icon</text>
+<text x="1878" y="454" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">varchar?</text>
+<text x="1676" y="473" font-size="11" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace">image_path</text>
+<text x="1878" y="473" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">varchar?</text>
+<text x="1676" y="492" font-size="11" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace">meta</text>
+<text x="1878" y="492" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">json?</text>
+<text x="1676" y="511" font-size="11" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace">position</text>
+<text x="1878" y="511" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">int</text>
+<text x="1676" y="530" font-size="11" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace">is_published</text>
+<text x="1878" y="530" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">tinyint</text>
+<text x="1676" y="549" font-size="11" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace">created_at</text>
+<text x="1878" y="549" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">timestamp?</text>
+<text x="1676" y="568" font-size="11" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace">updated_at</text>
+<text x="1878" y="568" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">timestamp?</text>
+<rect x="1640" y="627" width="250" height="177" rx="10" fill="#ffffff" stroke="#cfe0d7" stroke-width="1.5"/>
+<path d="M1640,661 v-24 a10,10 0 0 1 10,-10 h230 a10,10 0 0 1 10,10 v24 z" fill="#b48a5a"/>
+<text x="1654" y="649" font-size="13.5" font-weight="600" fill="#ffffff">site_settings</text>
+<text x="1652" y="675" font-size="8.5" font-weight="700" fill="#1b5a39" font-family="'JetBrains Mono', Consolas, monospace">PK</text>
+<text x="1676" y="675" font-size="11" fill="#16211d" font-family="'JetBrains Mono', Consolas, monospace">id</text>
+<text x="1878" y="675" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">bigint</text>
+<text x="1676" y="694" font-size="11" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace">key</text>
+<text x="1878" y="694" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">varchar</text>
+<text x="1676" y="713" font-size="11" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace">group</text>
+<text x="1878" y="713" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">varchar</text>
+<text x="1676" y="732" font-size="11" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace">value</text>
+<text x="1878" y="732" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">longtext?</text>
+<text x="1676" y="751" font-size="11" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace">type</text>
+<text x="1878" y="751" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">varchar</text>
+<text x="1676" y="770" font-size="11" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace">created_at</text>
+<text x="1878" y="770" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">timestamp?</text>
+<text x="1676" y="789" font-size="11" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace">updated_at</text>
+<text x="1878" y="789" font-size="9.5" text-anchor="end" fill="#5c6d66" font-family="'JetBrains Mono', Consolas, monospace" opacity="0.8">timestamp?</text>
+<text x="40" y="1005" font-size="11" fill="#5c6d66">Crow&#39;s foot = many · dot = one · green header = relational · brown header = CMS content (no foreign keys)</text>
+</svg>

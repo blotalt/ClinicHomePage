@@ -1,0 +1,175 @@
+erDiagram
+    doctors ||--o{ appointment_requests : "doctor_id"
+    patients ||--o{ appointment_requests : "patient_id"
+    services ||--o{ appointment_requests : "service_id"
+    appointment_requests ||--o{ appointments : "appointment_request_id"
+    doctors ||--o{ appointments : "doctor_id"
+    patients ||--o{ appointments : "patient_id"
+    services ||--o{ appointments : "service_id"
+    departments ||--o{ clinic_hours : "department_id"
+    doctors ||--o{ doctor_service : "doctor_id"
+    services ||--o{ doctor_service : "service_id"
+    departments ||--o{ doctors : "department_id"
+    users ||--o{ doctors : "user_id"
+    users ||--o{ passkeys : "user_id"
+    users ||--o{ patients : "user_id"
+    departments ||--o{ services : "department_id"
+    patients ||--o{ testimonials : "patient_id"
+    services ||--o{ testimonials : "service_id"
+    appointment_requests {
+        bigint id PK
+        varchar first_name
+        varchar last_name
+        varchar email
+        varchar phone
+        bigint service_id
+        bigint doctor_id
+        bigint patient_id
+        varchar service
+        text message
+        timestamp read_at
+        timestamp created_at
+        timestamp updated_at
+    }
+    appointments {
+        bigint id PK
+        bigint patient_id
+        bigint doctor_id
+        bigint service_id
+        bigint appointment_request_id
+        datetime scheduled_at
+        smallint duration_minutes
+        varchar status
+        text notes
+        timestamp created_at
+        timestamp updated_at
+    }
+    clinic_hours {
+        bigint id PK
+        bigint department_id
+        tinyint day_of_week
+        time opens_at
+        time closes_at
+        tinyint is_closed
+        timestamp created_at
+        timestamp updated_at
+    }
+    content_items {
+        bigint id PK
+        varchar collection
+        varchar title
+        longtext body
+        varchar icon
+        varchar image_path
+        json meta
+        int position
+        tinyint is_published
+        timestamp created_at
+        timestamp updated_at
+    }
+    departments {
+        bigint id PK
+        varchar name
+        varchar slug
+        text description
+        varchar icon
+        int position
+        tinyint is_published
+        timestamp created_at
+        timestamp updated_at
+    }
+    doctor_service {
+        bigint id PK
+        bigint doctor_id
+        bigint service_id
+        timestamp created_at
+        timestamp updated_at
+    }
+    doctors {
+        bigint id PK
+        bigint department_id
+        bigint user_id
+        varchar name
+        varchar slug
+        varchar title
+        longtext bio
+        varchar photo_path
+        varchar email
+        int position
+        tinyint is_published
+        timestamp created_at
+        timestamp updated_at
+    }
+    passkeys {
+        bigint id PK
+        bigint user_id
+        varchar name
+        varchar credential_id
+        json credential
+        timestamp last_used_at
+        timestamp created_at
+        timestamp updated_at
+    }
+    patients {
+        bigint id PK
+        bigint user_id
+        varchar first_name
+        varchar last_name
+        varchar email
+        varchar phone
+        date date_of_birth
+        text notes
+        timestamp created_at
+        timestamp updated_at
+    }
+    services {
+        bigint id PK
+        bigint department_id
+        varchar title
+        varchar slug
+        longtext body
+        varchar icon
+        varchar image_path
+        smallint duration_minutes
+        decimal price
+        json meta
+        int position
+        tinyint is_published
+        timestamp created_at
+        timestamp updated_at
+    }
+    site_settings {
+        bigint id PK
+        varchar key
+        varchar group
+        longtext value
+        varchar type
+        timestamp created_at
+        timestamp updated_at
+    }
+    testimonials {
+        bigint id PK
+        bigint patient_id
+        bigint service_id
+        varchar author_name
+        tinyint rating
+        longtext body
+        int position
+        tinyint is_published
+        timestamp created_at
+        timestamp updated_at
+    }
+    users {
+        bigint id PK
+        varchar name
+        varchar email
+        tinyint is_admin
+        timestamp email_verified_at
+        varchar password
+        text two_factor_secret
+        text two_factor_recovery_codes
+        timestamp two_factor_confirmed_at
+        varchar remember_token
+        timestamp created_at
+        timestamp updated_at
+    }

@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="faq-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f5f0e6"/>
+      <stop offset="100%" stop-color="#e8decb"/>
+    </linearGradient>
+    <linearGradient id="desk-wood" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#d4b483"/>
+      <stop offset="50%" stop-color="#e2c699"/>
+      <stop offset="100%" stop-color="#c6a370"/>
+    </linearGradient>
+    <linearGradient id="warm-lamp" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fff8e7" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#fff8e7" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background Wall -->
+  <rect width="800" height="600" fill="url(#faq-bg)"/>
+
+  <!-- Warm Wooden Floor -->
+  <rect y="400" width="800" height="200" fill="#d9cebf"/>
+  <line x1="0" y1="450" x2="800" y2="450" stroke="#cdbeab" stroke-width="2" opacity="0.6"/>
+  <line x1="0" y1="510" x2="800" y2="510" stroke="#cdbeab" stroke-width="2" opacity="0.6"/>
+
+  <!-- Window with Natural Sunlight (Left) -->
+  <rect x="40" y="40" width="220" height="340" rx="8" fill="#eef7f8"/>
+  <g stroke="#ffffff" stroke-width="8">
+    <line x1="150" y1="40" x2="150" y2="380"/>
+    <line x1="40" y1="200" x2="260" y2="200"/>
+    <rect x="40" y="40" width="220" height="340" rx="8" fill="none" stroke-width="10"/>
+  </g>
+
+  <!-- Clinic Sign on Wall -->
+  <rect x="360" y="80" width="260" height="60" rx="8" fill="#efe7d8" stroke="#dfd4c2" stroke-width="2"/>
+  <circle cx="395" cy="110" r="14" fill="#104838"/>
+  <path d="M395 102c-4 4-4 12 0 16 4-4 4-12 0-16z" fill="#bde8e2"/>
+  <text x="425" y="117" font-family="system-ui, sans-serif" font-size="18" font-weight="bold" fill="#104838">LUMINA CARE</text>
+
+  <!-- Reception Desk -->
+  <!-- Desk Base -->
+  <rect x="300" y="280" width="380" height="150" rx="16" fill="#ded5c4" stroke="#cfc3b0" stroke-width="2"/>
+  <!-- Front Slats Accent -->
+  <rect x="330" y="310" width="320" height="90" rx="10" fill="#efe8db"/>
+  <line x1="370" y1="310" x2="370" y2="400" stroke="#dfd4c0" stroke-width="3"/>
+  <line x1="410" y1="310" x2="410" y2="400" stroke="#dfd4c0" stroke-width="3"/>
+  <line x1="450" y1="310" x2="450" y2="400" stroke="#dfd4c0" stroke-width="3"/>
+  <line x1="490" y1="310" x2="490" y2="400" stroke="#dfd4c0" stroke-width="3"/>
+  <line x1="530" y1="310" x2="530" y2="400" stroke="#dfd4c0" stroke-width="3"/>
+  <line x1="570" y1="310" x2="570" y2="400" stroke="#dfd4c0" stroke-width="3"/>
+  <line x1="610" y1="310" x2="610" y2="400" stroke="#dfd4c0" stroke-width="3"/>
+  <!-- Countertop -->
+  <rect x="280" y="260" width="420" height="28" rx="8" fill="url(#desk-wood)"/>
+
+  <!-- Coordinator silhouette at desk -->
+  <ellipse cx="490" cy="210" rx="30" ry="38" fill="#e8bfad"/>
+  <path d="M440 260c5-35 25-45 50-45s45 10 50 45z" fill="#759c79"/>
+  <!-- Hair -->
+  <path d="M460 200c-5-30 20-40 35-40s35 10 30 40c-10-10-20-15-30-15s-25 5-35 15z" fill="#5a3d24"/>
+
+  <!-- Desk items (laptop, ceramic vase with botanicals) -->
+  <rect x="420" y="245" width="40" height="25" rx="3" fill="#cfd6dc"/>
+  <rect x="330" y="235" width="24" height="35" rx="6" fill="#fcfaf6" stroke="#dbd2c0" stroke-width="2"/>
+  <path d="M342 235c-10-25 15-40 2-60" stroke="#7fa587" stroke-width="4" stroke-linecap="round" fill="none"/>
+
+  <!-- Warm Pendant Lamp Overhead -->
+  <line x1="490" y1="0" x2="490" y2="70" stroke="#a4937d" stroke-width="3"/>
+  <path d="M450 100l40-30 40 30z" fill="#cfbeaa"/>
+  <polygon points="490,100 370,300 610,300" fill="url(#warm-lamp)"/>
+
+  <!-- Potted Fiddle Leaf Fig Plant (Right) -->
+  <path d="M710 370l10 80h50l10-80z" fill="#ece5d8" stroke="#d5cbbe" stroke-width="3"/>
+  <ellipse cx="745" cy="300" rx="45" ry="70" fill="#55855e"/>
+  <ellipse cx="715" cy="330" rx="35" ry="55" fill="#729b79"/>
+  <ellipse cx="770" cy="340" rx="30" ry="50" fill="#8bb192"/>
+
+  <!-- Cozy Green Armchair (Left foreground) -->
+  <rect x="120" y="340" width="130" height="110" rx="20" fill="#4d6e53"/>
+  <rect x="105" y="380" width="160" height="70" rx="18" fill="#588562"/>
+  <rect x="90" y="350" width="40" height="95" rx="14" fill="#3f5a44"/>
+  <rect x="235" y="350" width="40" height="95" rx="14" fill="#3f5a44"/>
+  <rect x="135" y="475" width="14" height="40" rx="4" fill="#8e7355"/>
+  <rect x="215" y="475" width="14" height="40" rx="4" fill="#8e7355"/>
+</svg>
